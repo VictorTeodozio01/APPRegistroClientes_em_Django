@@ -18,14 +18,3 @@ how to run:
 — run the following command in the project folder: python manage.py runserver
 
 — open the browser with the following address: http://127.0.0.1:8000/clientes/
-
-
-Proyecto de registro de clientes en Python/Django
-
-cómo probar: 
-
-— comprueba si la máquina tiene Django instalado.
-
-— ejecute el siguiente comando en la carpeta del proyecto: python Manage.py RunServer
-
-— abra el navegador con la siguiente dirección: http://127.0.0.1:8000/clientes/
