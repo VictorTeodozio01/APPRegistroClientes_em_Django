@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% if form.instance.id %}Editar Cliente{% else %}Adicionar Cliente{% endif %}</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h1>{% if form.instance.id %}Editar Cliente{% else %}Adicionar Cliente{% endif %}</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">{% if form.instance.id %}Salvar{% else %}Adicionar{% endif %}</button>
+        <a class="btn btn-secondary" href="{% url 'listar_clientes' %}">Cancelar</a>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Excluir Cliente</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h1>Excluir Cliente</h1>
+    <p>Tem certeza que deseja excluir o cliente "{{ cliente.nome }}"?</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">Excluir</button>
+        <a class="btn btn-secondary" href="{% url 'listar_clientes' %}">Cancelar</a>
+    </form>
+</div>
+</body>
+</html>
